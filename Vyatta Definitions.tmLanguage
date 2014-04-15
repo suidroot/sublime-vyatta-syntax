@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<!-- <string>cfg</string> -->
+		<!-- <string>txt</string> -->
+	</array>
+	<key>name</key>
+	<string>Vyatta</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>^\s*delete </string>
+			<key>name</key>
+			<string>invalid.illegal.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>shutdown</string>
+			<key>name</key>
+			<string>invalid.illegal.vyatta</string>
+		</dict>
+
+		<!-- Functions -->
+		<dict>
+			<key>match</key>
+			<string>set</string>
+			<key>name</key>
+			<string>support.function.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>edit</string>
+			<key>name</key>
+			<string>support.function.vyatta</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>top</string>
+			<key>name</key>
+			<string>support.function.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>up</string>
+			<key>name</key>
+			<string>support.function.vyatta</string>
+		</dict>
+		
+		<!-- unquoted strings -->
+		<dict>
+			<key>match</key>
+			<string>address </string>
+			<key>name</key>
+			<string>string.unquoted.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>source </string>
+			<key>name</key>
+			<string>string.unquoted.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>interfaces </string>
+			<key>name</key>
+			<string>string.unquoted.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ethernet </string>
+			<key>name</key>
+			<string>string.unquoted.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>any</string>
+			<key>name</key>
+			<string>string.unquoted.vyatta</string>
+		</dict>
+
+		<!-- constant -->
+		<dict>
+			<key>match</key>
+			<string>deny </string>
+			<key>name</key>
+			<string>support.constant.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>permit </string>
+			<key>name</key>
+			<string>constant.character.escape.vyatta</string>
+		</dict>
+
+		<!-- list -->
+		<dict>
+			<key>match</key>
+			<string>nat</string>
+			<key>name</key>
+			<string>markup.list.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>rule</string>
+			<key>name</key>
+			<string>markup.list.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>host</string>
+			<key>name</key>
+			<string>markup.list.vyatta</string>
+		</dict>
+
+		<!-- comment -->
+		<dict>
+			<key>match</key>
+			<string>^[\s]*!(.*)</string>
+			<key>name</key>
+			<string>comment.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>description</string>
+			<key>name</key>
+			<string>comment.vyatta</string>
+		</dict>
+
+		<!-- numerics -->
+		<dict>
+			<key>match</key>
+			<string>static</string>
+			<key>name</key>
+			<string>constant.numeric.vyatta</string>
+		</dict>
+
+		<!-- class -->
+		<dict>
+			<key>match</key>
+			<string>tunnel-group</string>
+			<key>name</key>
+			<string>support.class.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>crypto</string>
+			<key>name</key>
+			<string>support.class.vyatta</string>
+		</dict>
+
+		<!-- IP Addresses -->
+		<dict>
+			<key>match</key>
+			<string>\d+\.\d+\.\d+\.\d+(/\d{1,2})?</string>
+			<key>name</key>
+			<string>constant.numeric.vyatta</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[0-9a-fA-F]{0,4}:([0-9a-fA-F]{0,4}:)+[0-9a-fA-F]{0,4}(/\d{1,3})?</string>
+			<key>name</key>
+			<string>constant.numeric.vyatta</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.vyatta</string>
+	<key>uuid</key>
+	<string>f3ba50f0-2bad-48b7-9509-f6d72e353ddb</string>
+</dict>
+</plist>
