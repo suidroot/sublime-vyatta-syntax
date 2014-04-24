@@ -40,13 +40,13 @@
 
 		<dict>
 			<key>match</key>
-			<string>top</string>
+			<string>^\s*top</string>
 			<key>name</key>
 			<string>support.function.vyatta</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>up</string>
+			<string>^\s*up</string>
 			<key>name</key>
 			<string>support.function.vyatta</string>
 		</dict>
@@ -131,27 +131,6 @@
 			<string>comment.vyatta</string>
 		</dict>
 
-		<!-- numerics -->
-		<dict>
-			<key>match</key>
-			<string>static</string>
-			<key>name</key>
-			<string>constant.numeric.vyatta</string>
-		</dict>
-
-		<!-- class -->
-		<dict>
-			<key>match</key>
-			<string>tunnel-group</string>
-			<key>name</key>
-			<string>support.class.vyatta</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>crypto</string>
-			<key>name</key>
-			<string>support.class.vyatta</string>
-		</dict>
 
 		<!-- IP Addresses -->
 		<dict>
